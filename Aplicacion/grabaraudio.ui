@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GrabarAudio</class>
+ <widget class="QWidget" name="GrabarAudio">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Grabar Audio</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #444444;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lblEstado">
+     <property name="styleSheet">
+      <string notr="true">color: lightgray; font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>Listo para grabar</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnIniciar">
+     <property name="styleSheet">
+      <string notr="true">background-color: #888888; color: white;</string>
+     </property>
+     <property name="text">
+      <string>Iniciar grabación</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnPausar">
+     <property name="styleSheet">
+      <string notr="true">background-color: #888888; color: white;</string>
+     </property>
+     <property name="text">
+      <string>Pausar</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnDetener">
+     <property name="styleSheet">
+      <string notr="true">background-color: #888888; color: white;</string>
+     </property>
+     <property name="text">
+      <string>Detener</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnGuardar">
+     <property name="styleSheet">
+      <string notr="true">background-color: #4CAF50; color: white;</string>
+     </property>
+     <property name="text">
+      <string>Guardar</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnCancelar">
+     <property name="styleSheet">
+      <string notr="true">background-color: #d32f2f; color: white;</string>
+     </property>
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

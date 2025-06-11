@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Interfaz</class>
+ <widget class="QWidget" name="Interfaz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Transcriptor de conversaciones</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #444444;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="4">
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>220</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2A2A2A;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutLeft">
+      <item>
+       <widget class="QToolButton" name="toolButton">
+        <property name="text">
+         <string>Casa</string>
+        </property>
+        <property name="icon">
+         <iconset theme="go-home"/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelTranscripciones">
+        <property name="styleSheet">
+         <string notr="true">color: #AAAAAA; font-weight: bold; margin-top: 10px</string>
+        </property>
+        <property name="text">
+         <string>Historial de transcripciones</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListView" name="listView"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayoutAudio">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutBotonesAudio">
+       <item>
+        <widget class="QPushButton" name="loadButton">
+         <property name="text">
+          <string>📁 Cargar Archivo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="microButton">
+         <property name="toolTip">
+          <string>Grabar Audio</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+           font-size: 20px;
+           min-width: 32px;
+           min-height: 32px;
+           max-width: 40px;
+           max-height: 40px;
+           border-radius: 20px;
+           background-color: transparent;
+         </string>
+         </property>
+         <property name="text">
+          <string>🎤</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonStyle::ToolButtonTextOnly</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutReproductorCompacto">
+       <item>
+        <widget class="QPushButton" name="btnPlayPause">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+          font-size: 30px;
+          border-radius: 20px;
+          color: #444;
+          border: 1.5px solid #bbb;
+          background-color: transparent;
+         </string>
+         </property>
+         <property name="text">
+          <string>▶️</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="barraProgreso">
+         <property name="styleSheet">
+          <string notr="true">
+          background: transparent;
+          height: 7px;
+          border-radius: 3px;
+          margin-top: 4px;
+          margin-left: 10px;
+          margin-right: 10px;
+         </string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelTranscripcion">
+       <property name="styleSheet">
+        <string notr="true">color: #EEEEEE; font-weight: bold; margin-top: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Transcripción de Whisper:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="transcriptionEdit">
+       <property name="styleSheet">
+        <string notr="true">font-size: 15px; background-color: #f9f9f9; color: #222; border-radius: 6px; padding: 8px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayoutGuardarExportar">
+     <item>
+      <widget class="QPushButton" name="saveTranscriptionButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: #3a6ea5; color: white; padding: 6px; border-radius: 6px; font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>Guardar transcripción</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: #3a6ea5; color: white; padding: 6px; border-radius: 6px; font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>Exportar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

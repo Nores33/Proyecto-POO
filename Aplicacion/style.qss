@@ -1,0 +1,86 @@
+/* Botones generales con fondo oscuro y marco */
+QPushButton, QToolButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #232b38, stop:1 #181e26);
+    color: #fff;
+    border: 2px solid #6c7a89;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-weight: 600;
+    min-height: 36px;
+    min-width: 48px;
+}
+QPushButton:hover, QToolButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #394150, stop:1 #232b38);
+    border: 2.5px solid #43aa8b;
+}
+QPushButton:pressed, QToolButton:pressed {
+    background: #13181e;
+    border: 2px solid #3e6487;
+}
+
+/* Botón guardar transcripción: azul oscuro, bien visible */
+QPushButton#saveTranscriptionButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #225085, stop:1 #18365a);
+    color: #fff;
+    border: 2px solid #337ab7;
+    font-weight: bold;
+}
+QPushButton#saveTranscriptionButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4172b8, stop:1 #225085);
+    border: 2.5px solid #43aa8b;
+}
+
+/* Botones de exportar: fondo muy oscuro, cada uno con color de texto distinto */
+QPushButton#exportWordButton {
+    background: #232b38;
+    color: #bfc9e1;
+    border: 2px solid #8ba6d8;
+}
+QPushButton#exportWordButton:hover {
+    background: #34506c;
+    color: #fff;
+}
+
+QPushButton#exportPdfButton {
+    background: #232b38;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+QPushButton#exportPdfButton:hover {
+    background: #922b21;
+    color: #fff;
+}
+
+QPushButton#exportTxtButton {
+    background: #232b38;
+    color: #bfc9e1;
+    border: 2px solid #8ba6d8;
+}
+QPushButton#exportTxtButton:hover {
+    background: #34506c;
+    color: #fff;
+}
+
+/* Elimina bordes de los QLineEdit/QTextEdit y otros textos para la interfaz principal */
+QLineEdit, QPlainTextEdit, QTextEdit {
+    border: none;
+    background: #fff;
+    color: #222;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* Login y Register siguen con su marco si usas objectName adecuado */
+QWidget#Login QLineEdit, QWidget#Register QLineEdit,
+QWidget#Login QPlainTextEdit, QWidget#Register QPlainTextEdit {
+    border: 1.5px solid #3a6ea5;
+    background: #181a20;
+    color: #f4f4f4;
+    border-radius: 8px;
+    padding: 8px;
+}
+QWidget#Login QLineEdit:focus, QWidget#Register QLineEdit:focus,
+QWidget#Login QPlainTextEdit:focus, QWidget#Register QPlainTextEdit:focus {
+    border: 2px solid #8ecae6;
+    background: #22262f;
+}
