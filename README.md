@@ -83,12 +83,6 @@ Proyecto-POO/
 - **Historial:** Consulta, exporta o elimina transcripciones anteriores.
 - **Exportar:** Elige el formato deseado (TXT, PDF, Word).
 
-## Variables de entorno importantes (backend)
-
-- `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`, `MYSQL_HOST`
-- `SECRET_KEY`, `ACCESS_TOKEN_EXPIRE_MINUTES`, `JWT_ALGORITHM`
-- `OPENAI_API_KEY`
-
 ## Créditos
 
 - Qt/C++ para la interfaz gráfica.
