@@ -1,6 +1,6 @@
-# Proyecto-POO
+# Transcriptor de conversaciones
 
-Aplicación de transcripción de audio a texto con historial de transcripciones, autenticación de usuarios y exportación de resultados. El proyecto está dividido en dos partes principales:
+Aplicación de transcripción de conversaciones a texto con historial de transcripciones, autenticación de usuarios y exportación de resultados. El proyecto está dividido en dos partes principales:
 
 - **Frontend (Qt/C++):** Interfaz gráfica de usuario para grabar, cargar y transcribir audios, gestionar usuarios y visualizar/exportar el historial.
 - **Backend (FastAPI + MySQL):** API REST para autenticación, gestión de usuarios, historial y conexión con OpenAI Whisper para transcripción.
